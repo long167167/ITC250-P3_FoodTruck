@@ -204,7 +204,7 @@ function showData()
 	 echo 'Your Total is : $' . round($total,2) . '<br>';
 	//print tax
     $tax = $total * 0.10;
-     echo 'Tax: $' . $tax . '<br>';
+     echo 'Tax: $' . round($tax,2) . '<br>';
 	//print net total
     $netTotal = $tax + $total;
      echo 'Net Total is : <font color="red">$' . round($netTotal,2) .'</font>';
@@ -242,7 +242,7 @@ function checkandPrint($quantity, $counter){
                     getTopping($counter); 
                     echo '</td>
                     <td algin="right"><p>';
-                    subTotal($counter);
+                    subTotal($counter, $quantity);
                     echo '</p></td>
                     </tr>';}
                 else{
