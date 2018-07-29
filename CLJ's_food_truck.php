@@ -207,7 +207,7 @@ function showData()
      echo 'Tax: $' . $tax . '<br>';
 	//print net total
     $netTotal = $tax + $total;
-     echo 'Net Total is : <font color="red">$' . $netTotal .'</font>';
+     echo 'Net Total is : <font color="red">$' . round($netTotal,2) .'</font>';
     
 	echo '<p align="center"><a href="' . THIS_PAGE . '">RESET</a></p>';
 	get_footer(); #defaults to footer_inc.php
