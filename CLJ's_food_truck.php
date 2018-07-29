@@ -121,96 +121,103 @@ function showForm()
 function showData()
 {#form submits here we show entered name
 	 
-     get_header(); #defaults to header_inc.php
+    get_header(); #defaults to header_inc.php
     echo '<h3 align="center">' . smartTitle() . '</h3>';//title of the page
     global $config;
     //dumpDie($_POST);
     
-   
+   //check buyer name input
     
     $yourName = $_POST["isYourName"];
-    echo '<p>Dear ' . $yourName . '</p>';
-    echo '<p>You have ordered: </p>';    
-    
-    
-   
-    
-    //table for showdata
-    
-    echo '<table align = "center"> <tr>
-                <th width ="10%">Quatity</th> 
-                <th width ="10%">Price</th>
-                <th width ="10%">Product</th> 
-                <th width ="20%">Topping</th>
-                <th width = 10%">Subtotal</th>
-                </tr>
-                ';
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    $i=0;
-    $mainProduct = 0.00; 
-	foreach($_POST as $name => $value)
-    {
-         
-        //loop the form elements
-        if(empty($value)){
-            $value=0;
-        }
-        //if form name attribute starts with 'item_', process it
-        if(substr($name,0,5)=='item_')
-        {
-            //explode the string into an array on the "_"
-            $name_array = explode('_',$name);
-            
-            //id is the second element of the array
-			//forcibly cast to an int in the process
-           // $id = (int)$name_array[$i];
-            
-			/*
-				Here is where you'll do most of your work
-				Use $id to loop your array of items and return 
-				item data such as price.
-				
-				Consider creating a function to return a specific item 
-				from your items array, for example:
-				
-				$thisItem = getItem($id);
-				
-				Use $value to determine the number of items ordered 
-				and create subtotals, etc.
-			
-			*/
-           $mainProduct = $mainProduct + (int)$value * (float)$config->items[$i]->Price;
-            
-            //check order value, print only value>0         
-            checkandPrint($value, $i);
-          
-            $i++;
-     
-        }
+    if(empty($yourName)){
+        echo '<p align="left"><font color ="red"><h1>Please enter your name first!</h1></font></p><br>';
+        echo '<p align=left"><a href="' . THIS_PAGE . '">Reset your order form</a></p>';
+        
+    }//end check buyer name
+    else{
+        echo '<p>Dear ' . $yourName . '</p>';
+        echo '<p>You have ordered: </p>';    
 
-    }//end of foreach post->name
-        $total = $mainProduct + totalTopping($i);
-     echo '</table>';
-    //print total
-	 echo 'Your Total is : $' . round($total,2) . '<br>';
-	//print tax
-    $tax = $total * 0.10;
-     echo 'Tax: $' . round($tax,2) . '<br>';
-	//print net total
-    $netTotal = $tax + $total;
-     echo 'Net Total is : <font color="red">$' . round($netTotal,2) .'</font>';
-    
-	echo '<p align="center"><a href="' . THIS_PAGE . '">RESET</a></p>';
-	get_footer(); #defaults to footer_inc.php
+
+
+
+        //table for showdata
+
+        echo '<table align = "center"> <tr>
+                    <th width ="10%">Product</th> 
+                    <th width ="10%">Price</th>
+                    <th width ="10%">Quatity</th> 
+                    <th width ="20%">Topping</th>
+                    <th width = 10%">Subtotal</th>
+                    </tr>
+                    ';
+
+
+
+
+
+
+
+
+
+
+        $i=0;
+        $mainProduct = 0.00; 
+        foreach($_POST as $name => $value)
+        {
+
+            //loop the form elements
+            if(empty($value)){
+                $value=0;
+            }
+            //if form name attribute starts with 'item_', process it
+            if(substr($name,0,5)=='item_')
+            {
+                //explode the string into an array on the "_"
+                $name_array = explode('_',$name);
+
+                //id is the second element of the array
+                //forcibly cast to an int in the process
+               // $id = (int)$name_array[$i];
+
+                /*
+                    Here is where you'll do most of your work
+                    Use $id to loop your array of items and return 
+                    item data such as price.
+
+                    Consider creating a function to return a specific item 
+                    from your items array, for example:
+
+                    $thisItem = getItem($id);
+
+                    Use $value to determine the number of items ordered 
+                    and create subtotals, etc.
+
+                */
+               $mainProduct = $mainProduct + (int)$value * (float)$config->items[$i]->Price;
+
+                //check order value, print only value>0         
+                checkandPrint($value, $i);
+
+                $i++;
+
+            }
+
+        }//end of foreach post->name
+            $total = $mainProduct + totalTopping($i);
+         echo '</table>';
+        //print total
+         echo 'Your Total is : $' . round($total,2) . '<br>';
+        //print tax
+        $tax = $total * 0.10;
+         echo 'Tax: $' . round($tax,2) . '<br>';
+        //print net total
+        $netTotal = $tax + $total;
+         echo 'Net Total is : <font color="red">$' . round($netTotal,2) .'</font>';
+
+        echo '<p align="center"><a href="' . THIS_PAGE . '">RESET</a></p>';
+        get_footer(); #defaults to footer_inc.php
+    }//end buyer name check validate
 }
 
 function nameError()
@@ -234,11 +241,12 @@ function nameError()
 
 function checkandPrint($quantity, $counter){
      global $config;
+        
         if($quantity>0)
             {
                 if($quantity!=1){
                     echo '<tr><td><font color ="red"><p align="left">' . $config->items[$counter]->Name . 's</p></font></td><td><font color ="red"><p align="left">$' . $config->items[$counter]->Price . '</p></font></td><td><font color ="red"><p align="left">' . $quantity. '</p></font></td>
-                    <td>';
+                    <td>| ';
                     getTopping($counter); 
                     echo '</td>
                     <td algin="right"><p>';
@@ -247,7 +255,7 @@ function checkandPrint($quantity, $counter){
                     </tr>';}
                 else{
                     echo '<tr><td><font color ="red"><p align="left">' . $config->items[$counter]->Name . '</p></font></td><td><font color ="red"><p align="left">$' . $config->items[$counter]->Price . '</p></font></td><td><font color ="red"><p align="left">' . $quantity. '</p></font></td>
-                    <td>';
+                    <td>| ';
                     getTopping($counter); 
                     echo '</td>
                     <td algin="right"><p>';
@@ -284,8 +292,8 @@ function subTotal($i, $quantity)
                  $ct++;}
              
         }//end loop the topping
-       $subtotal=0.25*$ct + $config->items[$i]->Price * $quantity;
-       echo 'Added <font color ="red">' . $ct . ' </font>toppings<br>';
+       $subtotal=0.25*$ct*$quantity + $config->items[$i]->Price * $quantity;
+       echo 'Added <font color ="red">' . $quantity . '</font> x <font color ="red">' . $ct . ' </font>toppings<br>';
        echo "subtotal: $" . round($subtotal,2);
         
 }//end subTotal
