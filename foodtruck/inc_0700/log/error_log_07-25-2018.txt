@@ -1,0 +1,3 @@
+[Jul-25-2018 12:12:16] Use of undefined constant Title - assumed 'Title' in /home/jenvil1/jencodes.dreamhosters.com/sm18/surveys/survey_view.php on line 75
+[Jul-25-2018 12:12:47] Use of undefined constant Title - assumed 'Title' in /home/jenvil1/jencodes.dreamhosters.com/sm18/surveys/survey_view.php on line 75
+[Jul-25-2018 12:13:35] Use of undefined constant Title - assumed 'Title' in /home/jenvil1/jencodes.dreamhosters.com/sm18/surveys/survey_view.php on line 75

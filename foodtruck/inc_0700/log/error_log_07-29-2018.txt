@@ -1,0 +1,121 @@
+[Jul-29-2018 20:37:49] include(/home/jenvil1/jencodes.dreamhosters.com/foodtruck/inc_0700/credentials_inc.php): failed to open stream: No such file or directory in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/inc_0700/config_inc.php on line 67
+[Jul-29-2018 20:37:49] include(): Failed opening '/home/jenvil1/jencodes.dreamhosters.com/foodtruck/inc_0700/credentials_inc.php' for inclusion (include_path='.:/usr/local/lib/php:/usr/local/php5/lib/pear') in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/inc_0700/config_inc.php on line 67
+[Jul-29-2018 20:42:20] Undefined property: stdClass::$sidebar1 in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/inc_0700/header_inc.php on line 40
+[Jul-29-2018 20:56:26] Undefined property: stdClass::$sidebar1 in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/inc_0700/header_inc.php on line 40
+[Jul-29-2018 21:04:50] Undefined property: stdClass::$sidebar2 in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/inc_0700/config_inc.php on line 93
+[Jul-29-2018 21:05:25] Undefined property: stdClass::$sidebar2 in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/inc_0700/footer_inc.php on line 22
+[Jul-29-2018 21:26:58] Undefined index: toppings in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/CLJ's_food_truck.php on line 273
+[Jul-29-2018 21:26:58] Invalid argument supplied for foreach() in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/CLJ's_food_truck.php on line 275
+[Jul-29-2018 21:26:58] Undefined index: toppings in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/CLJ's_food_truck.php on line 286
+[Jul-29-2018 21:26:58] Invalid argument supplied for foreach() in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/CLJ's_food_truck.php on line 288
+[Jul-29-2018 21:26:58] Undefined index: toppings in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/CLJ's_food_truck.php on line 273
+[Jul-29-2018 21:26:58] Invalid argument supplied for foreach() in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/CLJ's_food_truck.php on line 275
+[Jul-29-2018 21:26:58] Undefined index: toppings in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/CLJ's_food_truck.php on line 286
+[Jul-29-2018 21:26:58] Invalid argument supplied for foreach() in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/CLJ's_food_truck.php on line 288
+[Jul-29-2018 21:26:58] Undefined index: toppings in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/CLJ's_food_truck.php on line 273
+[Jul-29-2018 21:26:58] Invalid argument supplied for foreach() in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/CLJ's_food_truck.php on line 275
+[Jul-29-2018 21:26:58] Undefined index: toppings in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/CLJ's_food_truck.php on line 286
+[Jul-29-2018 21:26:58] Invalid argument supplied for foreach() in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/CLJ's_food_truck.php on line 288
+[Jul-29-2018 21:26:58] Undefined index: toppings in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/CLJ's_food_truck.php on line 304
+[Jul-29-2018 21:26:58] Invalid argument supplied for foreach() in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/CLJ's_food_truck.php on line 306
+[Jul-29-2018 21:28:10] Undefined index: toppings in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/CLJ's_food_truck.php on line 273
+[Jul-29-2018 21:28:10] Invalid argument supplied for foreach() in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/CLJ's_food_truck.php on line 275
+[Jul-29-2018 21:28:10] Undefined index: toppings in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/CLJ's_food_truck.php on line 286
+[Jul-29-2018 21:28:10] Invalid argument supplied for foreach() in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/CLJ's_food_truck.php on line 288
+[Jul-29-2018 21:28:10] Undefined index: toppings in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/CLJ's_food_truck.php on line 273
+[Jul-29-2018 21:28:10] Invalid argument supplied for foreach() in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/CLJ's_food_truck.php on line 275
+[Jul-29-2018 21:28:10] Undefined index: toppings in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/CLJ's_food_truck.php on line 286
+[Jul-29-2018 21:28:10] Invalid argument supplied for foreach() in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/CLJ's_food_truck.php on line 288
+[Jul-29-2018 21:28:10] Undefined index: toppings in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/CLJ's_food_truck.php on line 273
+[Jul-29-2018 21:28:10] Invalid argument supplied for foreach() in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/CLJ's_food_truck.php on line 275
+[Jul-29-2018 21:28:10] Undefined index: toppings in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/CLJ's_food_truck.php on line 286
+[Jul-29-2018 21:28:10] Invalid argument supplied for foreach() in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/CLJ's_food_truck.php on line 288
+[Jul-29-2018 21:28:10] Undefined index: toppings in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/CLJ's_food_truck.php on line 304
+[Jul-29-2018 21:28:10] Invalid argument supplied for foreach() in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/CLJ's_food_truck.php on line 306
+[Jul-29-2018 21:29:30] Undefined index: toppings in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/CLJ's_food_truck.php on line 273
+[Jul-29-2018 21:29:30] Invalid argument supplied for foreach() in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/CLJ's_food_truck.php on line 275
+[Jul-29-2018 21:29:30] Undefined index: toppings in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/CLJ's_food_truck.php on line 286
+[Jul-29-2018 21:29:30] Invalid argument supplied for foreach() in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/CLJ's_food_truck.php on line 288
+[Jul-29-2018 21:29:30] Undefined index: toppings in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/CLJ's_food_truck.php on line 273
+[Jul-29-2018 21:29:30] Invalid argument supplied for foreach() in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/CLJ's_food_truck.php on line 275
+[Jul-29-2018 21:29:30] Undefined index: toppings in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/CLJ's_food_truck.php on line 286
+[Jul-29-2018 21:29:30] Invalid argument supplied for foreach() in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/CLJ's_food_truck.php on line 288
+[Jul-29-2018 21:29:30] Undefined index: toppings in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/CLJ's_food_truck.php on line 273
+[Jul-29-2018 21:29:30] Invalid argument supplied for foreach() in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/CLJ's_food_truck.php on line 275
+[Jul-29-2018 21:29:30] Undefined index: toppings in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/CLJ's_food_truck.php on line 286
+[Jul-29-2018 21:29:30] Invalid argument supplied for foreach() in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/CLJ's_food_truck.php on line 288
+[Jul-29-2018 21:29:30] Undefined index: toppings in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/CLJ's_food_truck.php on line 304
+[Jul-29-2018 21:29:30] Invalid argument supplied for foreach() in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/CLJ's_food_truck.php on line 306
+[Jul-29-2018 21:32:05] Undefined index: toppings in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/CLJ's_food_truck.php on line 273
+[Jul-29-2018 21:32:05] Invalid argument supplied for foreach() in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/CLJ's_food_truck.php on line 275
+[Jul-29-2018 21:32:05] Undefined index: toppings in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/CLJ's_food_truck.php on line 286
+[Jul-29-2018 21:32:05] Invalid argument supplied for foreach() in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/CLJ's_food_truck.php on line 288
+[Jul-29-2018 21:32:05] Undefined index: toppings in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/CLJ's_food_truck.php on line 304
+[Jul-29-2018 21:32:05] Invalid argument supplied for foreach() in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/CLJ's_food_truck.php on line 306
+[Jul-29-2018 21:59:57] Undefined index: toppings in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/CLJ's_food_truck.php on line 271
+[Jul-29-2018 21:59:57] Invalid argument supplied for foreach() in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/CLJ's_food_truck.php on line 274
+[Jul-29-2018 21:59:57] Undefined index: toppings in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/CLJ's_food_truck.php on line 285
+[Jul-29-2018 21:59:57] Undefined index: toppings in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/CLJ's_food_truck.php on line 271
+[Jul-29-2018 21:59:57] Invalid argument supplied for foreach() in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/CLJ's_food_truck.php on line 274
+[Jul-29-2018 21:59:57] Undefined index: toppings in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/CLJ's_food_truck.php on line 285
+[Jul-29-2018 21:59:57] Undefined index: toppings in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/CLJ's_food_truck.php on line 271
+[Jul-29-2018 21:59:57] Invalid argument supplied for foreach() in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/CLJ's_food_truck.php on line 274
+[Jul-29-2018 21:59:57] Undefined index: toppings in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/CLJ's_food_truck.php on line 285
+[Jul-29-2018 21:59:57] Undefined index: toppings in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/CLJ's_food_truck.php on line 312
+[Jul-29-2018 21:59:57] Invalid argument supplied for foreach() in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/CLJ's_food_truck.php on line 314
+[Jul-29-2018 22:01:32] Undefined index: toppings in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/CLJ's_food_truck.php on line 271
+[Jul-29-2018 22:01:32] Invalid argument supplied for foreach() in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/CLJ's_food_truck.php on line 274
+[Jul-29-2018 22:01:32] Undefined index: toppings in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/CLJ's_food_truck.php on line 285
+[Jul-29-2018 22:01:32] Undefined index: toppings in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/CLJ's_food_truck.php on line 271
+[Jul-29-2018 22:01:32] Invalid argument supplied for foreach() in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/CLJ's_food_truck.php on line 274
+[Jul-29-2018 22:01:32] Undefined index: toppings in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/CLJ's_food_truck.php on line 285
+[Jul-29-2018 22:01:32] Undefined index: toppings in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/CLJ's_food_truck.php on line 271
+[Jul-29-2018 22:01:32] Invalid argument supplied for foreach() in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/CLJ's_food_truck.php on line 274
+[Jul-29-2018 22:01:32] Undefined index: toppings in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/CLJ's_food_truck.php on line 285
+[Jul-29-2018 22:01:32] Undefined index: toppings in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/CLJ's_food_truck.php on line 312
+[Jul-29-2018 22:01:32] Invalid argument supplied for foreach() in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/CLJ's_food_truck.php on line 314
+[Jul-29-2018 22:01:37] Undefined index: toppings in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/CLJ's_food_truck.php on line 271
+[Jul-29-2018 22:01:37] Invalid argument supplied for foreach() in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/CLJ's_food_truck.php on line 274
+[Jul-29-2018 22:01:37] Undefined index: toppings in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/CLJ's_food_truck.php on line 285
+[Jul-29-2018 22:01:37] Undefined index: toppings in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/CLJ's_food_truck.php on line 271
+[Jul-29-2018 22:01:37] Invalid argument supplied for foreach() in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/CLJ's_food_truck.php on line 274
+[Jul-29-2018 22:01:37] Undefined index: toppings in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/CLJ's_food_truck.php on line 285
+[Jul-29-2018 22:01:37] Undefined index: toppings in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/CLJ's_food_truck.php on line 271
+[Jul-29-2018 22:01:37] Invalid argument supplied for foreach() in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/CLJ's_food_truck.php on line 274
+[Jul-29-2018 22:01:37] Undefined index: toppings in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/CLJ's_food_truck.php on line 285
+[Jul-29-2018 22:01:37] Undefined index: toppings in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/CLJ's_food_truck.php on line 312
+[Jul-29-2018 22:01:37] Invalid argument supplied for foreach() in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/CLJ's_food_truck.php on line 314
+[Jul-29-2018 23:05:46] Undefined property: stdClass::$metaDescription in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/inc_0700/meta_inc.php on line 20
+[Jul-29-2018 23:05:46] Undefined property: stdClass::$metaKeywords in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/inc_0700/meta_inc.php on line 21
+[Jul-29-2018 23:05:46] Undefined property: stdClass::$metaRobots in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/inc_0700/meta_inc.php on line 22
+[Jul-29-2018 23:07:07] Undefined property: stdClass::$metaDescription in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/inc_0700/meta_inc.php on line 20
+[Jul-29-2018 23:07:07] Undefined property: stdClass::$metaKeywords in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/inc_0700/meta_inc.php on line 21
+[Jul-29-2018 23:07:07] Undefined property: stdClass::$metaRobots in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/inc_0700/meta_inc.php on line 22
+[Jul-29-2018 23:07:28] Undefined property: stdClass::$metaDescription in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/inc_0700/meta_inc.php on line 20
+[Jul-29-2018 23:07:28] Undefined property: stdClass::$metaKeywords in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/inc_0700/meta_inc.php on line 21
+[Jul-29-2018 23:07:28] Undefined property: stdClass::$metaRobots in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/inc_0700/meta_inc.php on line 22
+[Jul-29-2018 23:07:34] include(/home/jenvil1/jencodes.dreamhosters.com/foodtruck/inc_0700/meta_inc.php): failed to open stream: No such file or directory in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/themes/Bootswatch/header_inc.php on line 8
+[Jul-29-2018 23:07:34] include(): Failed opening '/home/jenvil1/jencodes.dreamhosters.com/foodtruck/inc_0700/meta_inc.php' for inclusion (include_path='.:/usr/local/lib/php:/usr/local/php5/lib/pear') in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/themes/Bootswatch/header_inc.php on line 8
+[Jul-29-2018 23:08:06] Undefined property: stdClass::$metaDescription in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/inc_0700/meta_inc.php on line 20
+[Jul-29-2018 23:08:06] Undefined property: stdClass::$metaKeywords in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/inc_0700/meta_inc.php on line 21
+[Jul-29-2018 23:08:06] Undefined property: stdClass::$metaRobots in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/inc_0700/meta_inc.php on line 22
+[Jul-29-2018 23:09:19] Undefined property: stdClass::$metaDescription in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/inc_0700/meta_inc.php on line 20
+[Jul-29-2018 23:09:19] Undefined property: stdClass::$metaKeywords in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/inc_0700/meta_inc.php on line 21
+[Jul-29-2018 23:09:19] Undefined property: stdClass::$metaRobots in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/inc_0700/meta_inc.php on line 22
+[Jul-29-2018 23:11:23] Undefined property: stdClass::$metaDescription in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/inc_0700/meta_inc.php on line 20
+[Jul-29-2018 23:11:23] Undefined property: stdClass::$metaKeywords in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/inc_0700/meta_inc.php on line 21
+[Jul-29-2018 23:11:23] Undefined property: stdClass::$metaRobots in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/inc_0700/meta_inc.php on line 22
+[Jul-29-2018 23:11:31] Undefined property: stdClass::$metaDescription in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/inc_0700/meta_inc.php on line 20
+[Jul-29-2018 23:11:31] Undefined property: stdClass::$metaKeywords in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/inc_0700/meta_inc.php on line 21
+[Jul-29-2018 23:11:31] Undefined property: stdClass::$metaRobots in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/inc_0700/meta_inc.php on line 22
+[Jul-29-2018 23:11:59] include(/home/jenvil1/jencodes.dreamhosters.com/foodtruck/inc_0700/meta_inc.php): failed to open stream: No such file or directory in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/themes/Bootswatch/header_inc.php on line 8
+[Jul-29-2018 23:11:59] include(): Failed opening '/home/jenvil1/jencodes.dreamhosters.com/foodtruck/inc_0700/meta_inc.php' for inclusion (include_path='.:/usr/local/lib/php:/usr/local/php5/lib/pear') in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/themes/Bootswatch/header_inc.php on line 8
+[Jul-29-2018 23:13:03] Undefined property: stdClass::$metaDescription in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/inc_0700/meta_inc.php on line 20
+[Jul-29-2018 23:13:03] Undefined property: stdClass::$metaKeywords in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/inc_0700/meta_inc.php on line 21
+[Jul-29-2018 23:13:03] Undefined property: stdClass::$metaRobots in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/inc_0700/meta_inc.php on line 22
+[Jul-29-2018 23:14:21] Undefined property: stdClass::$metaDescription in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/inc_0700/meta_inc.php on line 20
+[Jul-29-2018 23:14:21] Undefined property: stdClass::$metaKeywords in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/inc_0700/meta_inc.php on line 21
+[Jul-29-2018 23:14:21] Undefined property: stdClass::$metaRobots in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/inc_0700/meta_inc.php on line 22
+[Jul-29-2018 23:14:23] Undefined property: stdClass::$metaDescription in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/inc_0700/meta_inc.php on line 20
+[Jul-29-2018 23:14:23] Undefined property: stdClass::$metaKeywords in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/inc_0700/meta_inc.php on line 21
+[Jul-29-2018 23:14:23] Undefined property: stdClass::$metaRobots in /home/jenvil1/jencodes.dreamhosters.com/foodtruck/inc_0700/meta_inc.php on line 22

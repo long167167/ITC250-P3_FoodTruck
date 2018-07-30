@@ -1,0 +1,9 @@
+[Jul-18-2018 15:21:13] Undefined index: MuffinName in /home/jenvil1/jencodes.dreamhosters.com/sm18/surveys/index.php on line 76
+[Jul-18-2018 15:21:13] Undefined index: Price in /home/jenvil1/jencodes.dreamhosters.com/sm18/surveys/index.php on line 77
+[Jul-18-2018 15:22:26] Undefined index: Price in /home/jenvil1/jencodes.dreamhosters.com/sm18/surveys/index.php on line 77
+[Jul-18-2018 15:42:09] Undefined index: Title  in /home/jenvil1/jencodes.dreamhosters.com/sm18/surveys/index.php on line 98
+[Jul-18-2018 15:42:09] Undefined index: AdminName  in /home/jenvil1/jencodes.dreamhosters.com/sm18/surveys/index.php on line 99
+[Jul-18-2018 15:42:09] Undefined index: DateAdded  in /home/jenvil1/jencodes.dreamhosters.com/sm18/surveys/index.php on line 100
+[Jul-18-2018 15:51:13] Undefined index: Title  in /home/jenvil1/jencodes.dreamhosters.com/sm18/surveys/index.php on line 98
+[Jul-18-2018 15:51:13] Undefined index: AdminName  in /home/jenvil1/jencodes.dreamhosters.com/sm18/surveys/index.php on line 99
+[Jul-18-2018 15:51:13] Undefined index: DateAdded  in /home/jenvil1/jencodes.dreamhosters.com/sm18/surveys/index.php on line 100
