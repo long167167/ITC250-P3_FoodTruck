@@ -204,7 +204,7 @@ function showData()
             }
 
         }//end of foreach post->name
-            $total = $mainProduct + totalTopping($i);
+            $total = $mainProduct + totalTopping();
          echo '</table>';
         //print total
          echo 'Your Total is : $' . round($total,2) . '<br>';
@@ -269,56 +269,71 @@ function checkandPrint($quantity, $counter){
 }//end checkandPrint
 
 function getTopping($i)
-{   $toppings = $_POST["toppings"];
-    
-    foreach($toppings as $topping)
-        {   
-            $topid = (int)substr($topping,0,1);
-            $topName = substr($topping,1);
-              if(($topid-1)==$i){echo '<font size="2"> ' . $topName . ' | </font>';}
-            
-        }//end loop the topping
+{   
+    if(empty($_POST["toppings"])){ echo 'No Topping';}
+    else{
+        $toppings = $_POST["toppings"];
+
+        foreach($toppings as $topping)
+            {   
+                $topid = (int)substr($topping,0,1);
+                $topName = substr($topping,1);
+                  if(($topid-1)==$i){echo '<font size="2"> ' . $topName . ' | </font>';}
+
+            }//end loop the topping
+    }//end check topping array
 }//end function getTopping
 
 function subTotal($i, $quantity)
-{   global $config; 
-    $toppings = $_POST["toppings"];
-    $ct=0;//counter of  topping
-    foreach($toppings as $topping)
-        {   
-            $topid = (int)substr($topping,0,1);
-             if(($topid-1)==$i)
-             {   
-                 $ct++;}
-             
-        }//end loop the topping
-       $subtotal=0.25*$ct*$quantity + $config->items[$i]->Price * $quantity;
-       echo 'Added <font color ="red">' . $quantity . '</font> x <font color ="red">' . $ct . ' </font>toppings<br>';
-       echo "subtotal: $" . round($subtotal,2);
-        
+{   global $config;
+    if(empty($_POST["toppings"]))
+    { 
+                echo 'Added <font color ="red">' . $quantity . '</font> x <font color ="red">' . 0 . ' </font>toppings<br>';
+                $subtotal= $config->items[$i]->Price * $quantity;
+                echo "subtotal: $" . round($subtotal,2);
+    
+    }
+    else{     
+        $toppings = $_POST["toppings"];
+        $ct=0;//counter of  topping
+        foreach($toppings as $topping)
+            {   
+                $topid = (int)substr($topping,0,1);
+                 if(($topid-1)==$i)
+                 {   
+                     $ct++;}
+
+            }//end loop the topping
+           $subtotal=0.25*$ct*$quantity + $config->items[$i]->Price * $quantity;
+           echo 'Added <font color ="red">' . $quantity . '</font> x <font color ="red">' . $ct . ' </font>toppings<br>';
+           echo "subtotal: $" . round($subtotal,2);
+    }//end check array
 }//end subTotal
 
-function totalTopping($i){
+function totalTopping(){
     global $config; 
-    $toppings = $_POST["toppings"];
-    $ct=0;//counter of  topping
-    foreach($toppings as $topping)
-        {   
-            $topid = (int)substr($topping,0,1);
-            
-             {   
-                 $ct++;}
-             
-        }//end loop the topping
-       $toppingFree = 0.25*$ct;
-        return $toppingFree;
+    if(empty($_POST["toppings"]))
+    { $toppingFree = 0.00;
+        return $toppingFree;}
+    else{
+            $toppings = $_POST["toppings"];
+            $ct=0;//counter of  topping
+            foreach($toppings as $topping)
+                {   
+                    $topid = (int)substr($topping,0,1);
 
-    
+                     {   
+                         $ct++;}
+
+                }//end loop the topping
+               $toppingFree = 0.25*$ct;
+                return $toppingFree;
+
+    }//end check toppings array empty
     
 }//end function finalBill
 
 ?>
-
 
 
 
