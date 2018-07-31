@@ -25,7 +25,8 @@
  */
 
 # '../' works for a sub-folder.  use './' for the root  
-require '../inc_0700/config_inc.php'; #provides configuration, pathing, error handling, db credentials
+require './inc_0700/config_inc.php'; #provides configuration, pathing, error handling, db credentials
+//require 'config_inc.php'; #provides configuration, pathing, error handling, db credentials
 include 'items.php'; 
 /*
 $config->metaDescription = 'Web Database ITC281 class website.'; #Fills <meta> tags.
@@ -74,7 +75,7 @@ function showForm()
 	<form action="' . THIS_PAGE . '" method="post" onsubmit="return checkForm(this);">
     <p align="center">Please enter your name<br></p>
     
-    <p align="center"><b>Your Name:  </b><input type="text" name="isYourName" /><em>(<font color="red"><b>*</b> required field</font>)</p>
+    <p align="center"><b>Your Name:  </b><input type="text" name="isYourName" /><em> (<font color="red"><b>*</b> required field</font>)</p>
     ';
        
         echo '<table height=300px width =70% align="center"> <tr>
@@ -88,7 +89,7 @@ function showForm()
           {
             echo '<tr> <td align = "center">' . $item->Name . '</td>
             <td>' . $item->Price . '</td>
-            <td><input type="text" size = "5" maxlenght = "5" name="item_' . $item->Name . '"/></td>
+            <td><input type="text" size = "5" maxlength = "5" name="item_' . $item->Name . '"/></td>
             <td><table>';
             $i=0;
             foreach($item->Extras as $extra)
@@ -108,7 +109,7 @@ function showForm()
     
     
         echo    '<p align="center">
-				<font color = "red">Each kind of added Topping will be up charged $0.25.</font>	
+				<font color = "green">Each kind of added Topping will be up charged $0.25.</font>	
 				</p>
 		<input type="hidden" name="act" value="display" />
 	</form>
@@ -129,24 +130,28 @@ function showData()
    //check buyer name input
     
     $yourName = $_POST["isYourName"];
-    if(empty($yourName)){
+    if(empty($yourName) and ($yourName !== "0")){
         echo '<p align="left"><font color ="red"><h1>Please enter your name first!</h1></font></p><br>';
         echo '<p align=left"><a href="' . THIS_PAGE . '">Reset your order form</a></p>';
         
     }//end check buyer name
+    else if(intval($yourName) or ($yourName === "0")){
+        echo '<p align="left"><font color ="red"><h1>Please enter a real name!</h1></font></p><br>';
+        echo '<p align=left"><a href="' . THIS_PAGE . '">Reset your order form</a></p>';
+    }//buyer name cannot be a number
     else{
-        echo '<p>Dear ' . $yourName . '</p>';
+        echo '<p>Dear ' . $yourName . ', </p>';
         echo '<p>You have ordered: </p>';    
 
 
 
 
-        //table for showdata
-
+        //table for show data will this edit
+ 
         echo '<table align = "center"> <tr>
                     <th width ="10%">Product</th> 
                     <th width ="10%">Price</th>
-                    <th width ="10%">Quatity</th> 
+                    <th width ="10%">Quantity</th> 
                     <th width ="20%">Topping</th>
                     <th width = 10%">Subtotal</th>
                     </tr>
@@ -160,7 +165,7 @@ function showData()
 
 
 
-
+        //$error=false;
         $i=0;
         $mainProduct = 0.00; 
         foreach($_POST as $name => $value)
@@ -171,7 +176,7 @@ function showData()
                 $value=0;
             }
             //if form name attribute starts with 'item_', process it
-            if(substr($name,0,5)=='item_')
+            if(substr($name,0,5)=='item_') 
             {
                 //explode the string into an array on the "_"
                 $name_array = explode('_',$name);
@@ -194,6 +199,10 @@ function showData()
                     and create subtotals, etc.
 
                 */
+            if (intval($value) == false and !empty($value)) {
+                echo '<p align="left"><font color ="red"><h1>Please enter an integer for ' . $name_array[1] . '! ' . $value . ' is not an integer value! ' . ' ' . ' If this is a hacking attempt your IP has been traced to ' . $_SERVER['REMOTE_ADDR'] . '!' . '</h1></font></p><br>';
+                echo '<p align=left"><a href="' . THIS_PAGE . '">Reset your order form</a></p>';
+            }
                $mainProduct = $mainProduct + (int)$value * (float)$config->items[$i]->Price;
 
                 //check order value, print only value>0         
@@ -204,7 +213,7 @@ function showData()
             }
 
         }//end of foreach post->name
-            $total = $mainProduct + totalTopping();
+        $total = $mainProduct + totalTopping();
          echo '</table>';
         //print total
          echo 'Your Total is : $' . round($total,2) . '<br>';
@@ -245,7 +254,7 @@ function checkandPrint($quantity, $counter){
         if($quantity>0)
             {
                 if($quantity!=1){
-                    echo '<tr><td><font color ="red"><p align="left">' . $config->items[$counter]->Name . 's</p></font></td><td><font color ="red"><p align="left">$' . $config->items[$counter]->Price . '</p></font></td><td><font color ="red"><p align="left">' . $quantity. '</p></font></td>
+                    echo '<tr><td><font color ="green"><p align="left">' . $config->items[$counter]->Name . 's</p></font></td><td><font color ="green"><p align="left">$' . $config->items[$counter]->Price . '</p></font></td><td><font color ="green"><p align="left">' . $quantity. '</p></font></td>
                     <td>| ';
                     getTopping($counter); 
                     echo '</td>
@@ -254,7 +263,7 @@ function checkandPrint($quantity, $counter){
                     echo '</p></td>
                     </tr>';}
                 else{
-                    echo '<tr><td><font color ="red"><p align="left">' . $config->items[$counter]->Name . '</p></font></td><td><font color ="red"><p align="left">$' . $config->items[$counter]->Price . '</p></font></td><td><font color ="red"><p align="left">' . $quantity. '</p></font></td>
+                    echo '<tr><td><font color ="green"><p align="left">' . $config->items[$counter]->Name . '</p></font></td><td><font color ="green"><p align="left">$' . $config->items[$counter]->Price . '</p></font></td><td><font color ="green"><p align="left">' . $quantity. '</p></font></td>
                     <td>| ';
                     getTopping($counter); 
                     echo '</td>
@@ -269,17 +278,15 @@ function checkandPrint($quantity, $counter){
 }//end checkandPrint
 
 function getTopping($i)
-{   
+    {   
     if(empty($_POST["toppings"])){ echo 'No Topping';}
     else{
         $toppings = $_POST["toppings"];
-
         foreach($toppings as $topping)
             {   
                 $topid = (int)substr($topping,0,1);
                 $topName = substr($topping,1);
                   if(($topid-1)==$i){echo '<font size="2"> ' . $topName . ' | </font>';}
-
             }//end loop the topping
     }//end check topping array
 }//end function getTopping
@@ -302,12 +309,12 @@ function subTotal($i, $quantity)
                  if(($topid-1)==$i)
                  {   
                      $ct++;}
-
             }//end loop the topping
            $subtotal=0.25*$ct*$quantity + $config->items[$i]->Price * $quantity;
            echo 'Added <font color ="red">' . $quantity . '</font> x <font color ="red">' . $ct . ' </font>toppings<br>';
            echo "subtotal: $" . round($subtotal,2);
     }//end check array
+        
 }//end subTotal
 
 function totalTopping(){
@@ -321,19 +328,33 @@ function totalTopping(){
             foreach($toppings as $topping)
                 {   
                     $topid = (int)substr($topping,0,1);
-
                      {   
                          $ct++;}
-
                 }//end loop the topping
                $toppingFree = 0.25*$ct;
                 return $toppingFree;
-
     }//end check toppings array empty
     
 }//end function finalBill
-
 ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

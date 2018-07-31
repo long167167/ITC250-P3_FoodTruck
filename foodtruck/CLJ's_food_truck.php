@@ -89,7 +89,7 @@ function showForm()
           {
             echo '<tr> <td align = "center">' . $item->Name . '</td>
             <td>' . $item->Price . '</td>
-            <td><input type="text" size = "5" maxlenght = "5" name="item_' . $item->Name . '"/></td>
+            <td><input type="text" size = "5" maxlength = "5" name="item_' . $item->Name . '"/></td>
             <td><table>';
             $i=0;
             foreach($item->Extras as $extra)
@@ -130,11 +130,15 @@ function showData()
    //check buyer name input
     
     $yourName = $_POST["isYourName"];
-    if(empty($yourName)){
+    if(empty($yourName) and ($yourName !== "0")){
         echo '<p align="left"><font color ="red"><h1>Please enter your name first!</h1></font></p><br>';
         echo '<p align=left"><a href="' . THIS_PAGE . '">Reset your order form</a></p>';
         
     }//end check buyer name
+    else if(intval($yourName) or ($yourName === "0")){
+        echo '<p align="left"><font color ="red"><h1>Please enter a real name!</h1></font></p><br>';
+        echo '<p align=left"><a href="' . THIS_PAGE . '">Reset your order form</a></p>';
+    }//buyer name cannot be a number
     else{
         echo '<p>Dear ' . $yourName . ', </p>';
         echo '<p>You have ordered: </p>';    
@@ -161,7 +165,7 @@ function showData()
 
 
 
-
+        //$error=false;
         $i=0;
         $mainProduct = 0.00; 
         foreach($_POST as $name => $value)
@@ -172,7 +176,7 @@ function showData()
                 $value=0;
             }
             //if form name attribute starts with 'item_', process it
-            if(substr($name,0,5)=='item_')
+            if(substr($name,0,5)=='item_') 
             {
                 //explode the string into an array on the "_"
                 $name_array = explode('_',$name);
@@ -195,6 +199,10 @@ function showData()
                     and create subtotals, etc.
 
                 */
+            if (intval($value) == false and !empty($value)) {
+                echo '<p align="left"><font color ="red"><h1>Please enter an integer for ' . $name_array[1] . '! ' . $value . ' is not an integer value! ' . ' ' . ' If this is a hacking attempt your IP has been traced to ' . $_SERVER['REMOTE_ADDR'] . '!' . '</h1></font></p><br>';
+                echo '<p align=left"><a href="' . THIS_PAGE . '">Reset your order form</a></p>';
+            }
                $mainProduct = $mainProduct + (int)$value * (float)$config->items[$i]->Price;
 
                 //check order value, print only value>0         
@@ -329,6 +337,23 @@ function totalTopping(){
     
 }//end function finalBill
 ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
